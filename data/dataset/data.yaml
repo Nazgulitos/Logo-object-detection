@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 1
+names: ['logo']
+
+roboflow:
+  workspace: mlcontest
+  project: t-bank-ml-contest-3ovw0
+  version: 3
+  license: Private
+  url: https://app.roboflow.com/mlcontest/t-bank-ml-contest-3ovw0/3
