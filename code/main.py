@@ -43,14 +43,13 @@ SUPPORTED_CONTENT_TYPES = {
 
 app = FastAPI(title="T-Bank Logo Detection API", version="1.0.0")
 
-# Lazy global model
+# Global model
 _detector: YoloDetector | None = None
 
 
 def get_detector() -> YoloDetector:
     global _detector
     if _detector is None:
-        # Default weights path bundled in repo
         _detector = YoloDetector(weights_path="models/best-yolov8n.pt", device=None, conf_threshold=0.25)
     return _detector
 
