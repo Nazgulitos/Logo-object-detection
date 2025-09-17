@@ -59,7 +59,7 @@ docker build -t tbank-logo-api .
 docker run --rm -p 8000:8000 -v "$PWD/models:/app/models" tbank-logo-api
 ```
 
-API будет доступен на `http://localhost:8000`. При монтировании каталога `models/` контейнер увидит ваши локальные веса.
+API будет доступен на `http://localhost:8000`.
 
 ---
 
@@ -118,7 +118,7 @@ python -m code.validate --weights models/best-yolov8n.pt \
 
 Разметка выполнялась на платформе Roboflow:
 - ручная разметка 50 фото;
-- автоматическая разметка их моделью на оставшихся фото.
+- автоматическая разметка ИИ моделью на оставшихся фото.
 
 Классы: `logo` или `null` (если на изображении ничего нет).
 
