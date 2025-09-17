@@ -28,6 +28,7 @@ REST API сервис для детекции логотипа Т‑Банка �
 ## Установка и запуск локально
 1) Создайте и активируйте окружение Python 3.12
 ```bash
+cd Logo-object-detection
 python3.12 -m venv .venv
 source .venv/bin/activate   # Mac / Linux
 .venv\Scripts\Activate.ps1  # Windows (PowerShell)
